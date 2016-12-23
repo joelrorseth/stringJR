@@ -5,7 +5,7 @@
 //  s1 as long as characters from s1 occur in the null-terminated
 //  string s2. Returns the number of characters spanned.
 //
-//  Last modified by Joel Rorseth on 2016-09-28.
+//  Last modified by Joel Rorseth on 2016-12-23.
 //
 
 #include <stdio.h>
@@ -33,7 +33,7 @@ size_t strspnJR(const char * s1, const char * s2) {
     size_t n = 0;
     char * s2_head = (char *)s2;
     
-    // Tes every character combination of both strings
+    // Test every character combination of both strings
     for (; *s1 != '\0'; s1++) {
         for (s2 = s2_head; *s2 != '\0'; s2++) {
             
